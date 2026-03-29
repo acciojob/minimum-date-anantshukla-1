@@ -1,4 +1,11 @@
 function minDate(dates) {
+	return dates.reduce((accumulator, current)=>{
+		if(current < accumulator){
+			return current;
+		} else {
+			return accumulator;
+		}
+	})
   //write you code here
 }
 
